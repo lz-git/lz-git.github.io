@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="zh">
+<html lang="zh-CN">
 
 
 <head>
@@ -28,7 +28,6 @@
     <link rel="stylesheet" type="text/css" href="/css/my.css">
 
     <script src="/libs/jquery/jquery.min.js"></script>
-
 <meta name="generator" content="Hexo 5.0.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -128,7 +127,7 @@
   
   <li>
     <a href="#searchModal" class="modal-trigger waves-effect waves-light">
-      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
     </a>
   </li>
 </ul>
@@ -368,7 +367,13 @@
                 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
                 <script>
                     var typed = new Typed("#subtitle", {
-                        strings: ['从来没有真正的绝境, 只有心灵的迷途','Never really desperate, only the lost of the soul'],
+                        strings: ['没有礁石，就没有美丽的浪花；没有挫折，就没有壮丽的人生。',
+					'没有伞的孩子必须努力奔跑！',
+					'花开不是为了花落，而是为了开的更加灿烂。',
+					'欲望以提升热忱，毅力以磨平高山。',
+					'如果放弃太早，你永远都不知道自己会错过什么。',
+					'从来没有真正的绝境, 只有心灵的迷途',
+					'Never really desperate, only the lost of the soul'],
                         startDelay: 300,
                         typeSpeed: 100,
                         loop: true,
@@ -393,7 +398,7 @@
 
             <div class="cover-btns">
                 <a href="#indexCard" class="waves-effect waves-light btn">
-                    <i class="fa fa-angle-double-down"></i>Start
+                    <i class="fa fa-angle-double-down"></i>开始阅读
                 </a>
 
                 
@@ -550,6 +555,60 @@
     <!-- 所有文章卡片 -->
     <article id="articles" class="container articles">
         <div class="row article-row">
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2020/08/09/linux-ji-chu-ming-ling/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="Linux基础命令">
+                            
+                            <span class="card-title">Linux基础命令</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                Linux基础命令目录管理
+ls: 列出目录      ls /  查看根路径root下的目录
+cd：切换目录  
+cd .. :切换到上级目录
+cd ~ : 切换到根目录
+pwd：显示目前的目录
+mkdir：创建一个新的目录
+rmdir：
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-08-09
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/Linux/" class="post-category">
+                                    Linux
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/Linux/">
+                            <span class="chip bg-color">Linux</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
@@ -793,8 +852,8 @@
 <div id="searchModal" class="modal">
     <div class="modal-content">
         <div class="search-header">
-            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
-            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
                    class="search-input">
         </div>
         <div id="searchResult"></div>
@@ -822,7 +881,7 @@ $(function () {
     <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
     <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
     <script src="/js/matery.js"></script>
-
+    <script src="/js/cursor.js"></script>
     <!-- Baidu Analytics -->
 
     <!-- Baidu Push -->
@@ -863,8 +922,8 @@ $(function () {
     
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
-
     <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/sakura.js"></script>
+    
 </body>
 
 </html>
